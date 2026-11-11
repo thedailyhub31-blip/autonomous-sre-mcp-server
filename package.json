@@ -1,0 +1,44 @@
+{
+  "name": "autonomous-sre-mcp-server",
+  "version": "1.0.0",
+  "description": "Autonomous SRE & Distributed Incident Diagnosis MCP Server using TypeScript and OpenTelemetry",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "sre-mcp-server": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedailyhub31-blip/autonomous-sre-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thedailyhub31-blip/autonomous-sre-mcp-server/issues"
+  },
+  "homepage": "https://github.com/thedailyhub31-blip/autonomous-sre-mcp-server#readme",
+  "scripts": {
+    "build": "node ./node_modules/typescript/bin/tsc",
+    "start": "node dist/index.js",
+    "test": "node ./node_modules/tsx/dist/cli.mjs scripts/test-client.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "sre",
+    "site-reliability-engineering",
+    "incident-response",
+    "telemetry",
+    "opentelemetry",
+    "root-cause-analysis"
+  ],
+  "author": "thedailyhub31-blip",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
